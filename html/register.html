@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Health Haven</title>
+    <link rel="stylesheet" href="../css/havencs.css">
+</head>
+<body>
+
+<nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="../img/logo.jpg" alt="Health Haven logo"></a>
+			<h3 class="brandname">Health Haven Medical Centre</h3>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../html/LearnMore.html">Learn More</a></li>
+            <li><a href="../html/Services.html">Services</a></li>
+            <li><a href="../html/wellness.html">Wellness</a></li>
+            <li><a href="../html/testomony.html">Testimonials</a></li>
+            <li><a href="#">Register/Login</a></li>
+        </ul>
+    </nav>
+	
+    <!-- Form structure adapted from W3Schools HTML Forms tutorial
+         https://www.w3schools.com/html/html_forms.asp -->
+
+    <section class="intro">
+	
+
+        <h1>Sign Up/Log in</h1>
+		<img src="../img/signing.png" alt="a man filling out a form">
+		<p>Sign up today to gain immediate access to timely updates regarding our free clinic schedules, upcoming health programs, educational events, and community initiatives <b>OR</b> If you are a returning member and already possess an account, please use the form below the sign up section to securely log in.</p>
+        <form action="../html/danke.html">
+		<h2>Sign Up</h2>
+            <fieldset>
+			<!-- All input form elements (<input>) were implemented using concepts learned from
+     W3Schools HTML Forms tutorial
+     https://www.w3schools.com/html/html_form_input_types.asp -->
+
+                <input type="text" name="fullname" placeholder="Full Name" required>
+				<input type="date" required>
+
+                <!-- Select dropdown adapted from W3Schools Select tutorial
+                     https://www.w3schools.com/tags/tag_select.asp -->
+                <select required>
+                    <option value="">Select your gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+
+            </fieldset>
+
+            <div class="form-buttons">
+                <input type="submit" value="Sign up">
+                <input type="reset" value="Clear">
+            </div>
+
+        </form>
+
+    </section>
+
+    <hr>
+
+    <section class="info">
+
+        <h2>Log in</h2>
+
+        <form action="../index.html">
+
+            <fieldset>
+                <legend>Login Details</legend>
+
+                <input type="text" placeholder="Username / Email" required>
+                <input type="password" placeholder="Password" required>
+
+            </fieldset>
+
+            <div class="form-buttons">
+                <input type="submit" value="Log in">
+                <input type="reset" value="Clear">
+            </div>
+
+        </form>
+
+    </section>
+
+
+<footer>
+    <p class="foot">&copy; 2025 Health Haven Medical Centre</p>
+</footer>
+
+</body>
+</html>
